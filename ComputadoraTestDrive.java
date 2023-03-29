@@ -36,8 +36,8 @@ public class ComputadoraTestDrive {
   
         programas[j] = new Programa();
   
-        System.out.println("Ingresa el nombre del programa #" + (j+1));
-        programas[j].setNombre(escaner.nextLine());
+          System.out.println("Ingresa el nombre del programa #" + (j+1));
+          programas[j].setNombre(escaner.nextLine());
   
         System.out.println("Ingresa la fecha de instalacion del programa #" + (j+1));
         programas[j].setFechaInstalacion(escaner.nextLine());
@@ -59,6 +59,16 @@ public class ComputadoraTestDrive {
       }
     }
 
+    Programa nuevoPrograma = new Programa();
+
+    System.out.println("Ingresa el nombre del programa que quieres instalar en todos los equipos");
+      nuevoPrograma.setNombre(escaner.nextLine());
+
+    System.out.println("Ingresa la fecha de instalacion del programa");
+      nuevoPrograma.setFechaInstalacion(escaner.nextLine());
+    
+    cc1.instalarProgramaEnComputadoras(nuevoPrograma);
+    
     escaner.close();
   }
 }

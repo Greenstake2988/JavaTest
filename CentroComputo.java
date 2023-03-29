@@ -22,4 +22,10 @@ public class CentroComputo {
   public Computadora[] getComputadoras() {
     return computadoras;
   }
+
+  public void instalarProgramaEnComputadoras(Programa programa) {
+    for  (Computadora computadora : computadoras){
+      computadora.instalarPrograma(programa);
+    }
+  }
 }
